@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6094C5C23CE60110052E14E /* BgroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6094C5B23CE60110052E14E /* BgroundViewController.m */; };
+		E6094C5F23D0F3F50052E14E /* SingletonClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E6094C5E23D0F3F50052E14E /* SingletonClass.m */; };
+		E6094CAC23D1BDB20052E14E /* Drawing.m in Sources */ = {isa = PBXBuildFile; fileRef = E6094CAB23D1BDB20052E14E /* Drawing.m */; };
 		E6F574D823C7AF230014B65D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F574D723C7AF230014B65D /* AppDelegate.m */; };
 		E6F574DB23C7AF230014B65D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F574DA23C7AF230014B65D /* SceneDelegate.m */; };
 		E6F574DE23C7AF230014B65D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F574DD23C7AF230014B65D /* ViewController.m */; };
@@ -16,6 +19,8 @@
 		E6F574E923C7AF270014B65D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F574E823C7AF270014B65D /* main.m */; };
 		E6F574F323C7AF270014B65D /* Labb1_ObjectiveC_CyrilleNgideKolleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F574F223C7AF270014B65D /* Labb1_ObjectiveC_CyrilleNgideKolleTests.m */; };
 		E6F574FE23C7AF270014B65D /* Labb1_ObjectiveC_CyrilleNgideKolleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F574FD23C7AF270014B65D /* Labb1_ObjectiveC_CyrilleNgideKolleUITests.m */; };
+		E6F5759323C9FFA80014B65D /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F5759223C9FFA80014B65D /* Storyboard.storyboard */; };
+		E6F5759623CC5BB40014B65D /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F5759523CC5BB40014B65D /* GameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E6094C5A23CE60110052E14E /* BgroundViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BgroundViewController.h; sourceTree = "<group>"; };
+		E6094C5B23CE60110052E14E /* BgroundViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BgroundViewController.m; sourceTree = "<group>"; };
+		E6094C5D23D0F3F50052E14E /* SingletonClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonClass.h; sourceTree = "<group>"; };
+		E6094C5E23D0F3F50052E14E /* SingletonClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonClass.m; sourceTree = "<group>"; };
+		E6094CAA23D1BDB20052E14E /* Drawing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Drawing.h; sourceTree = "<group>"; };
+		E6094CAB23D1BDB20052E14E /* Drawing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Drawing.m; sourceTree = "<group>"; };
 		E6F574D323C7AF230014B65D /* Labb1.ObjectiveC.CyrilleNgideKolle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Labb1.ObjectiveC.CyrilleNgideKolle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F574D623C7AF230014B65D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E6F574D723C7AF230014B65D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +65,9 @@
 		E6F574F923C7AF270014B65D /* Labb1.ObjectiveC.CyrilleNgideKolleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Labb1.ObjectiveC.CyrilleNgideKolleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F574FD23C7AF270014B65D /* Labb1_ObjectiveC_CyrilleNgideKolleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Labb1_ObjectiveC_CyrilleNgideKolleUITests.m; sourceTree = "<group>"; };
 		E6F574FF23C7AF270014B65D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6F5759223C9FFA80014B65D /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../../Documents/Storyboard.storyboard; sourceTree = "<group>"; };
+		E6F5759423CC5BB40014B65D /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		E6F5759523CC5BB40014B65D /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +98,7 @@
 		E6F574CA23C7AF230014B65D = {
 			isa = PBXGroup;
 			children = (
+				E6F5759223C9FFA80014B65D /* Storyboard.storyboard */,
 				E6F574D523C7AF230014B65D /* Labb1.ObjectiveC.CyrilleNgideKolle */,
 				E6F574F123C7AF270014B65D /* Labb1.ObjectiveC.CyrilleNgideKolleTests */,
 				E6F574FC23C7AF270014B65D /* Labb1.ObjectiveC.CyrilleNgideKolleUITests */,
@@ -110,7 +125,15 @@
 				E6F574DA23C7AF230014B65D /* SceneDelegate.m */,
 				E6F574DC23C7AF230014B65D /* ViewController.h */,
 				E6F574DD23C7AF230014B65D /* ViewController.m */,
+				E6094C5D23D0F3F50052E14E /* SingletonClass.h */,
+				E6094C5E23D0F3F50052E14E /* SingletonClass.m */,
 				E6F574DF23C7AF230014B65D /* Main.storyboard */,
+				E6094CAA23D1BDB20052E14E /* Drawing.h */,
+				E6094CAB23D1BDB20052E14E /* Drawing.m */,
+				E6094C5A23CE60110052E14E /* BgroundViewController.h */,
+				E6094C5B23CE60110052E14E /* BgroundViewController.m */,
+				E6F5759423CC5BB40014B65D /* GameViewController.h */,
+				E6F5759523CC5BB40014B65D /* GameViewController.m */,
 				E6F574E223C7AF270014B65D /* Assets.xcassets */,
 				E6F574E423C7AF270014B65D /* LaunchScreen.storyboard */,
 				E6F574E723C7AF270014B65D /* Info.plist */,
@@ -243,6 +266,7 @@
 				E6F574E623C7AF270014B65D /* LaunchScreen.storyboard in Resources */,
 				E6F574E323C7AF270014B65D /* Assets.xcassets in Resources */,
 				E6F574E123C7AF230014B65D /* Main.storyboard in Resources */,
+				E6F5759323C9FFA80014B65D /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,9 +291,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6094CAC23D1BDB20052E14E /* Drawing.m in Sources */,
+				E6094C5F23D0F3F50052E14E /* SingletonClass.m in Sources */,
+				E6F5759623CC5BB40014B65D /* GameViewController.m in Sources */,
 				E6F574DE23C7AF230014B65D /* ViewController.m in Sources */,
 				E6F574D823C7AF230014B65D /* AppDelegate.m in Sources */,
 				E6F574E923C7AF270014B65D /* main.m in Sources */,
+				E6094C5C23CE60110052E14E /* BgroundViewController.m in Sources */,
 				E6F574DB23C7AF230014B65D /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

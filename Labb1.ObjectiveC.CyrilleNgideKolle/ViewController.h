@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BgroundViewController.h"
+#import "SingletonClass.h"
 
 @interface ViewController : UIViewController
+@property (nonatomic) NSMutableArray* SingletonClass;
 
 
 @end
