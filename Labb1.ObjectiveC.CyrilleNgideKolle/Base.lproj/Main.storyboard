@@ -120,7 +120,6 @@
                             <constraint firstItem="vUn-wR-zJZ" firstAttribute="trailing" secondItem="hAr-vJ-sOI" secondAttribute="trailing" constant="177" id="6jx-8P-8uW"/>
                             <constraint firstItem="vUn-wR-zJZ" firstAttribute="bottom" secondItem="hAr-vJ-sOI" secondAttribute="bottom" constant="127" id="Cbh-aT-qTz"/>
                             <constraint firstItem="r2X-h3-xa1" firstAttribute="top" secondItem="vUn-wR-zJZ" secondAttribute="top" constant="179" id="Pmd-ni-eKk"/>
-                            <constraint firstItem="vUn-wR-zJZ" firstAttribute="trailing" secondItem="Aj2-UI-HYq" secondAttribute="trailing" constant="184" id="Suf-uF-9Pm"/>
                             <constraint firstItem="vUn-wR-zJZ" firstAttribute="trailing" secondItem="rjS-Pd-OS5" secondAttribute="trailing" constant="127" id="TCT-a3-ZfQ"/>
                             <constraint firstItem="rjS-Pd-OS5" firstAttribute="leading" secondItem="vUn-wR-zJZ" secondAttribute="leading" constant="127" id="e1B-8f-JBD"/>
                             <constraint firstItem="vUn-wR-zJZ" firstAttribute="trailing" secondItem="r2X-h3-xa1" secondAttribute="trailing" constant="184" id="fdB-si-T1m"/>
@@ -139,7 +138,7 @@
             </objects>
             <point key="canvasLocation" x="2868.115942028986" y="847.76785714285711"/>
         </scene>
-        <!--Game View Controller-->
+        <!--GUESSGAME-->
         <scene sceneID="gfz-wU-gMc">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="M0y-qC-Ier" customClass="GameViewController" sceneMemberID="viewController">
@@ -170,7 +169,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLk-Mg-1bB">
-                                <rect key="frame" x="116" y="420" width="173" height="96"/>
+                                <rect key="frame" x="115" y="420" width="174" height="96"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="4wD-2t-8jF"/>
@@ -184,7 +183,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oZ-Xb-Age">
-                                <rect key="frame" x="116" y="149" width="173" height="96"/>
+                                <rect key="frame" x="115.5" y="149" width="173" height="96"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="173" id="23J-BJ-j31"/>
                                     <constraint firstAttribute="height" constant="96" id="KmM-e0-SQC"/>
@@ -194,7 +193,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDf-Fi-fkL">
-                                <rect key="frame" x="116" y="570" width="173" height="98"/>
+                                <rect key="frame" x="115" y="570" width="174" height="98"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="98" id="4U1-VK-Q46"/>
                                 </constraints>
@@ -202,30 +201,49 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lxo-1W-3kP">
+                                <rect key="frame" x="-5" y="99" width="414" height="34"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="edi-Um-2Ep"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="slide to play, then guess!">
+                                        <attributes>
+                                            <font key="NSFont" size="21" name="BodoniSvtyTwoOSITCTT-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="dgq-yU-XlF" firstAttribute="trailing" secondItem="5oZ-Xb-Age" secondAttribute="trailing" constant="125" id="0wQ-0L-tt3"/>
+                            <constraint firstItem="Lxo-1W-3kP" firstAttribute="top" secondItem="dgq-yU-XlF" secondAttribute="top" constant="43" id="2Bb-b3-ZIR"/>
                             <constraint firstItem="dgq-yU-XlF" firstAttribute="bottom" secondItem="Kqp-KE-Ojo" secondAttribute="bottom" constant="52" id="5dy-lh-4tf"/>
                             <constraint firstItem="YLk-Mg-1bB" firstAttribute="trailing" secondItem="dDf-Fi-fkL" secondAttribute="trailing" id="6L6-Ih-Ri5"/>
                             <constraint firstItem="dgq-yU-XlF" firstAttribute="trailing" secondItem="Kqp-KE-Ojo" secondAttribute="trailing" constant="20" id="7QL-n9-LYr"/>
                             <constraint firstItem="w78-f4-des" firstAttribute="top" secondItem="dgq-yU-XlF" secondAttribute="top" constant="85" id="7TA-c5-sCC"/>
                             <constraint firstItem="5oZ-Xb-Age" firstAttribute="top" secondItem="w78-f4-des" secondAttribute="bottom" constant="8" id="Fnv-ak-8ot"/>
+                            <constraint firstItem="YLk-Mg-1bB" firstAttribute="centerX" secondItem="5oZ-Xb-Age" secondAttribute="centerX" id="KSD-c9-n3K"/>
                             <constraint firstItem="Krd-xw-jsN" firstAttribute="centerX" secondItem="w78-f4-des" secondAttribute="centerX" id="MeG-6j-KaL"/>
                             <constraint firstItem="Krd-xw-jsN" firstAttribute="leading" secondItem="dgq-yU-XlF" secondAttribute="leading" id="Mpr-24-u1q"/>
                             <constraint firstItem="Krd-xw-jsN" firstAttribute="top" secondItem="5oZ-Xb-Age" secondAttribute="bottom" constant="86" id="Nit-w5-baU"/>
                             <constraint firstItem="YLk-Mg-1bB" firstAttribute="leading" secondItem="dDf-Fi-fkL" secondAttribute="leading" id="aNm-7z-JKp"/>
                             <constraint firstItem="dDf-Fi-fkL" firstAttribute="top" secondItem="YLk-Mg-1bB" secondAttribute="bottom" constant="54" id="b5E-Gr-zRE"/>
-                            <constraint firstItem="dDf-Fi-fkL" firstAttribute="trailing" secondItem="5oZ-Xb-Age" secondAttribute="trailing" id="fDQ-Lu-jTb"/>
+                            <constraint firstItem="Lxo-1W-3kP" firstAttribute="centerX" secondItem="5oZ-Xb-Age" secondAttribute="centerX" id="eGy-AV-Cf8"/>
                             <constraint firstItem="dgq-yU-XlF" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="w78-f4-des" secondAttribute="trailing" id="fPA-DT-BvA"/>
                             <constraint firstItem="Krd-xw-jsN" firstAttribute="centerX" secondItem="Kqp-KE-Ojo" secondAttribute="centerX" id="fPF-5f-m6h"/>
+                            <constraint firstItem="YLk-Mg-1bB" firstAttribute="leading" secondItem="dgq-yU-XlF" secondAttribute="leading" constant="115" id="fba-df-6zx"/>
+                            <constraint firstItem="dgq-yU-XlF" firstAttribute="trailing" secondItem="Lxo-1W-3kP" secondAttribute="trailing" constant="5" id="hW7-Ak-kki"/>
                             <constraint firstItem="Kqp-KE-Ojo" firstAttribute="top" secondItem="dDf-Fi-fkL" secondAttribute="bottom" constant="37" id="oDR-3Y-5q1"/>
                             <constraint firstItem="Kqp-KE-Ojo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dgq-yU-XlF" secondAttribute="leading" symbolic="YES" id="vsY-Tu-NsO"/>
-                            <constraint firstItem="dDf-Fi-fkL" firstAttribute="leading" secondItem="5oZ-Xb-Age" secondAttribute="leading" id="ytj-YK-xya"/>
+                            <constraint firstItem="Lxo-1W-3kP" firstAttribute="leading" secondItem="wFH-Ny-SV0" secondAttribute="leading" constant="-5" id="yKN-lv-MqD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dgq-yU-XlF"/>
                     </view>
-                    <navigationItem key="navigationItem" id="JqR-WL-5uF"/>
+                    <navigationItem key="navigationItem" title="GUESSGAME" id="JqR-WL-5uF"/>
                     <connections>
                         <outlet property="GuessButton" destination="YLk-Mg-1bB" id="uEi-SI-5OB"/>
                         <outlet property="GuessNumber" destination="5oZ-Xb-Age" id="oLX-ud-RMm"/>
@@ -235,9 +253,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhZ-VY-wEG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="999" y="1568"/>
+            <point key="canvasLocation" x="1958" y="1568"/>
         </scene>
-        <!--View Controller-->
+        <!--ABOUT-->
         <scene sceneID="M6T-Ib-oAR">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="fNq-er-LSc" customClass="ViewController" sceneMemberID="viewController">
@@ -274,13 +292,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FQA-9R-qsn"/>
                     </view>
-                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="wG9-1A-Xvk"/>
+                    <navigationItem key="navigationItem" title="ABOUT" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="wG9-1A-Xvk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gum-7v-WZy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3780" y="1568"/>
         </scene>
-        <!--Bground View Controller-->
+        <!--RED-->
         <scene sceneID="1xB-MR-MHR">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="4mB-7k-owb" customClass="BgroundViewController" sceneMemberID="viewController">
@@ -300,7 +318,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Ypl-Zi-IQn"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Lrl-Uq-LTp"/>
+                    <navigationItem key="navigationItem" title="RED" id="Lrl-Uq-LTp"/>
                     <connections>
                         <outlet property="switchProperty" destination="HNd-X5-JjY" id="ReJ-E8-aHd"/>
                     </connections>
@@ -308,7 +326,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXS-r7-FCI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="bFs-vB-DLp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2428.985507246377" y="1620.5357142857142"/>
+            <point key="canvasLocation" x="2916" y="1568"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="03N-Tl-Ws3">
@@ -329,7 +347,7 @@
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="847.76785714285711"/>
         </scene>
-        <!--View Controller-->
+        <!--INFO-->
         <scene sceneID="jra-y1-gmp">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="EBU-nJ-Zo1" customClass="ViewController" sceneMemberID="viewController">
@@ -483,7 +501,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <navigationItem key="navigationItem" id="EAt-Fl-Q01"/>
+                    <navigationItem key="navigationItem" title="INFO" id="EAt-Fl-Q01"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sxq-B3-ROL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

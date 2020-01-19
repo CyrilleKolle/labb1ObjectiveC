@@ -18,7 +18,7 @@ static SingletonClass *instance = nil;
 +(id) Instance {
     if(instance == nil){
         instance = [[SingletonClass alloc] init];
- 
+        instance.colorB = [[UIColor alloc] initWithRed:1.0 green:1.0 blue:1.0 alpha:1];
     }
     return instance;
 }
@@ -33,7 +33,6 @@ static SingletonClass *instance = nil;
     return self.colorB;
 }
 
-//[[SingletonClass Instance] setData:@"R"];
 @end
 
 

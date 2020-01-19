@@ -17,9 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UISwitch *switchProperty;
 
--(void) changeAppColor: (UIColor *)color;
 
-- (IBAction)switchButton:(id)sender;
+-(void) changeAppColor: (UIColor *)color;
+-(void)switchState;
+- (IBAction)switchButton:(UISwitch*)sender;
+
 
 @end
 

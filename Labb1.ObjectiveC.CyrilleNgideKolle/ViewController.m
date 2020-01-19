@@ -9,9 +9,6 @@
 #import "SingletonClass.h"
 #import "BgroundViewController.h"
 
-
-
-
 @interface ViewController ()
 
 
@@ -23,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
  
-    self.view.backgroundColor = [[UIColor alloc] initWithRed:1.0 green:1.0 blue:1.0 alpha:1];
+    self.view.backgroundColor = [[SingletonClass Instance]getData];
     
 }
 

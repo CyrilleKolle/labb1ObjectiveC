@@ -15,10 +15,9 @@
 
 @implementation BgroundViewController
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+   
 }
 
 /*
@@ -36,22 +35,52 @@
     self.view.backgroundColor = color;
   
     [[SingletonClass Instance] setData:color];
-    
+  
 }
 
 -(void)viewWillAppear:(BOOL)animated{
    
      self.view.backgroundColor = [[SingletonClass Instance] getData];
-}
-
-- (IBAction)switchButton:(id)sender {
-    if (self.switchProperty.on){
-         [self changeAppColor:[[UIColor alloc] initWithRed:1.0 green:1.0 blue:1.0 alpha:1]];
+    
+   if([[[NSUserDefaults standardUserDefaults] valueForKey:@"switch"]isEqualToString:@"on"]){
+        self.switchProperty.on=YES;
     }else{
-        [self changeAppColor: [[UIColor alloc] initWithRed:1.0 green:0.0 blue:0.0 alpha:1]];
-        [[SingletonClass Instance]getData];
+        self.switchProperty.on = NO;
     }
 }
-  
+
+
+    -(void)switchState{
+    if(self.switchProperty.on){
+        [[NSUserDefaults standardUserDefaults]setObject:@"on" forKey:@"switch"];
+        [[NSUserDefaults standardUserDefaults]synchronize];
+    }else{
+        [[NSUserDefaults standardUserDefaults]setObject:@"off" forKey:@"switch"];
+        [[NSUserDefaults standardUserDefaults]synchronize];
+    }
+}
+
+    - (IBAction)switchButton:(UISwitch*)sender{
+       
+        if (self.switchProperty.on && sender.on){
+             [self changeAppColor:[[UIColor alloc] initWithRed:1.0 green:1.0 blue:1.0 alpha:1]];
+            self.switchProperty.tintColor = [UIColor whiteColor];
+             [self switchState];
+            [[NSUserDefaults standardUserDefaults]objectForKey:@"switch"];
+            
+        }else{
+            [self changeAppColor: [[UIColor alloc] initWithRed:1.0 green:0.0 blue:0.0 alpha:1]];
+            [[SingletonClass Instance]getData];
+            self.switchProperty.tintColor =[UIColor redColor];
+             [self switchState];
+              [[NSUserDefaults standardUserDefaults]objectForKey:@"switch"];
+            
+        }
+        
+    }
+
     @end
+  
+    
+
     

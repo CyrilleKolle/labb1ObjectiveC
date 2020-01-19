@@ -26,13 +26,30 @@
     self.RandomNumber.text =[NSString stringWithFormat:@"%d", random];
     if ([self.GuessNumber.text isEqualToString:self.RandomNumber.text]) {
         
-        self.winOrLoseText.text = [NSString stringWithFormat:@"%@", @"You win"];
+        self.winOrLoseText.text = [NSString stringWithFormat:@"%@", @"slide to replay!"];
         self.GuessNumber.text =[NSString stringWithFormat:@"%@", @"YES!"];
         self.RandomNumber.text =[NSString stringWithFormat:@"%@", @"YES!"];
+       /*
+        //[self delay];
+        [NSThread sleepForTimeInterval: 2];
+        
+        self.GuessNumber.text =[NSString stringWithFormat:@"%@", @"0"];
+        self.RandomNumber.text =[NSString stringWithFormat:@"%@", @"0"];
+        self.winOrLoseText.text = [NSString stringWithFormat:@"%@", @"Play Again!"];
+        
+        
+        */
         
     }else {
         self.winOrLoseText.text = [NSString stringWithFormat:@"%@", @"You suck"];
     }
+}
+-(void)delay{
+    double delayInSeconds = 2.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+      NSLog(@"Do some work");
+    });
 }
 
 
